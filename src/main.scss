@@ -1,0 +1,497 @@
+/* == Google Font Import - Playfair Display and Raleway===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+//Color
+$primary: #A3F7BF;
+$secondary: #29A19C;
+// $dark: #27323A;
+$dark: #151D3B; //Dark Blue
+$light: #E6F1FF;
+$warning: #FB8E60;
+
+// Global
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden !important;
+}
+
+$nav-pills-link-active-color:       $dark;
+
+//Button
+$btn-padding-y: 1rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+//Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,  //8px
+  2: $spacer * .75, //12px
+  3: $spacer,       //16px
+  4: $spacer * 1.5, //24px
+  5: $spacer * 2,   //32px
+  6: $spacer * 2.5, //40px
+  7: $spacer * 3,   //48px
+  8: $spacer * 3.5, //56px
+  9: $spacer * 4,   //64px
+  10: $spacer * 4.5, //72px
+  11: $spacer * 5,   //80px
+  12: $spacer * 7.5,  //120px
+);
+
+// Grid
+$grid-columns:      12;
+$grid-gutter-width: 2rem; //32px
+
+//Grid Breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+//Container max-width
+$container-max-widths: (
+  sm: 378px,
+  md: 570px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+//Typography
+$font-size-root: 16px;
+$font-size-base: 1rem;
+$h1-font-size:                $font-size-base * 3.8125; //61px
+$h2-font-size:                $font-size-base * 3.0625; //49px
+$h3-font-size:                $font-size-base * 2.4375; //39px
+$h4-font-size:                $font-size-base * 1.9375; //31px
+$h5-font-size:                $font-size-base * 1.5625; //25px
+$h6-font-size:                $font-size-base * 1.25;   //20px
+$font-size-sm:                $font-size-base * 0.8125; //Body Hint 13px
+$btn-font-size:               $font-size-base;          //16px
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Playfair Display', serif;
+}
+
+//Shadow
+$box-shadow:                  0px 2px 4px $primary;
+// $box-shadow:                  0px 2px 4px lighten($dark, 05);
+// $box-shadow:                  0px 2px 4px rgba($primary, 0.8);
+$box-shadow-sm:               0px 4px 8px rgba(0, 0, 0, 0.16);
+$box-shadow-lg:               0px 16px 24px rgba(0, 0, 0, 0.12);
+
+//Nav Bar
+$navbar-dark-color:                 rgba($light, .55);
+$navbar-dark-hover-color:           $light;
+$navbar-dark-active-color:          $dark;
+$navbar-toggler-border-radius:      1rem;
+$navbar-dark-toggler-border-color:  rgba($light, .55);
+// $navbar-dark-toggler-icon-bg:       $primary;
+
+:target{
+background: lighten($dark, 03);
+}
+
+a:focus {
+  background-color: yellow;
+}
+
+// Font Weight
+$font-weight-lighter:         400; //Regular
+$font-weight-light:           500; //Medium
+$font-weight-normal:          600; //Semi-bold
+$font-weight-bold:            700; //Bold
+$font-weight-bolder:          bolder; //Bolder
+$font-weight-base:            $font-weight-lighter;
+
+.glightbox-clean .gslide-title {
+    font-size: $h4-font-size;
+    font-weight:    $font-weight-bold;
+}
+
+.nav-link.active{
+    font-weight:    $font-weight-bolder;
+}
+
+
+//Aspect Ration
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "4x1": calc(1 / 4 * 100%)
+);
+
+//Input form
+$input-bg:                              lighten($dark, 05);
+$input-color:                           $light;
+$input-border-radius:                   1rem;
+$input-padding-y:                       1rem;
+$input-padding-x:                       1rem;
+
+//Floating label
+// $form-floating-height:            add(3.5rem, $input-height-border);
+$form-floating-line-height:       1.25;
+$form-floating-padding-x:         $input-padding-x;
+$form-floating-padding-y:         $input-padding-y;
+$form-floating-input-padding-t:   1.625rem;
+$form-floating-input-padding-b:   .625rem;
+$form-floating-label-opacity:     .65;
+$form-floating-label-transform:   scale(.75) translateY(-.75rem) translateX(.15rem);
+$form-floating-transition:        opacity .5s ease-in-out, transform .1s ease-in-out;
+
+// input:focus + label {
+//   background-color: $secondary !important;
+// }
+
+
+
+$position-values: (
+  0: 0,
+  75: 75%,
+  50: 50%,
+  100: 100%
+);
+
+//Carousel
+$carousel-indicator-width:           16px;
+$carousel-indicator-height:          16px;
+$carousel-indicator-spacer:          4px;
+$carousel-indicator-active-bg:       $primary;
+$carousel-indicator-opacity:         .5;
+
+//Card
+$card-border-width:                 null;
+$card-border-radius:                1rem;
+$card-height:                       100%;
+$card-spacer-y:                     2rem;
+$card-spacer-x:                     1rem;
+$card-bg:                           lighten($dark, 05);
+
+//card hover
+@mixin card-hover {
+    border: 2px solid $primary !important;
+    color: $primary !important;
+    transform: scale(1.05);
+    transition: .5s;
+    i{
+        color: $primary !important;
+    }
+}
+
+.card{
+    transition: .5s;
+    border: 0px !important;
+
+    &.service-card{
+        max-width: 379px;
+        & i{
+            color: rgba($light, .9);
+            font-size: 8rem;
+        }
+        &:hover{
+            @include card-hover;
+        }
+    }
+
+    &.stat-card{
+        max-width: 200px;
+        & i{
+            color: rgba($light, .9);
+            font-size: $h1-font-size;
+        }
+        &:hover{
+            @include card-hover;
+        }
+    }
+
+    &.test-card{
+        max-width: 600px;
+        &:hover{
+            @include card-hover;
+        }
+    }
+}
+
+.hero{
+    video{
+        object-fit: cover !important;
+    }
+
+    .btn{
+        border: 0px;
+    }
+    .btn-dark{
+        background-color: rgba($dark, .7);
+    }
+}
+
+.img-dark-overlay{
+        background: linear-gradient(rgba($dark, .4),rgba($dark, .4));
+    }
+.card-img-overlay{
+        border-radius: 0 !important;
+    }
+
+
+.testimonials{
+    .card{
+        img{
+            width: 7.5rem;
+            height: 7.5rem;
+        }
+    }
+}
+
+.gallery{
+    .card{
+        z-index: 999980;
+        border-radius: 0 !important;
+
+        img{
+        transition: .5s;
+        }
+        overflow: hidden;
+        transition: .5s;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                    transition: .5s;
+                }
+            }
+            .btn{
+        border: 0px;
+    }
+        .btn-dark{
+            background-color: rgba($dark, .7);
+        }
+    }
+    .opacity{
+            opacity: 0.3;
+        }
+}
+
+.carousel-indicators{
+margin-right: 0 !important;
+margin-bottom: -2.5rem !important;
+margin-left: 0 !important;
+}
+
+.carousel-indicators [data-bs-target]{
+border-radius: 50%;
+}
+
+// .carousel-control-prev,
+// .carousel-control-next{
+//       align-items: flex-end !important;
+// }
+
+.top-nav{
+    z-index: 999990;
+    .bg-dark {
+        background-color: rgba($dark, .9) !important;
+    }
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active-reveal{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.slick-slide {
+    padding:  1rem;
+  }
+
+  .slick-dots li button:before{
+    font-size: 1.5rem !important;
+    color: $primary !important;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: $primary !important;
+    font-size: $h2-font-size !important;
+  }
+
+  // Icon Size
+.icon-size {
+    width: 40px; 
+    height: 40px;
+  }
+
+  // Socials
+.fa-square-facebook:hover{
+    color: #1877F2 !important;
+    transition: .5s;
+  }
+  
+  .fa-instagram:hover{
+    color: #C32AA3 !important;
+    transition: .5s;
+  }
+  
+  .fa-square-twitter:hover{
+    color: #1DA1F2 !important;
+    transition: .5s;
+  }
+  
+  .fa-linkedin:hover{
+    color: #0A66C2 !important;
+    transition: .5s;
+  }
+  
+  .fa-square-youtube:hover{
+    color: #FF0000 !important;
+    transition: .5s;
+  }
+
+@import '../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+@include media-breakpoint-down(md) { 
+    .card.hero { 
+      .ratio-21x9{
+        --bs-aspect-ratio: calc(3 / 4 * 100%);
+        }
+    }
+  }
+  @include media-breakpoint-down(sm) { 
+    .card.hero { 
+      .ratio-21x9{
+        --bs-aspect-ratio: calc(4 / 3 * 100%);
+        }
+    }
+  }
+
+
+// .slick-active.slick-center.slick-current {
+//     @include card-hover;
+// }
+// @import './scss/_functions.scss';
+//  @import './scss/_variables.scss';
+//  @import './scss/mixins/_breakpoints.scss';
+
+
+//  @import "./scss/_utilities";
+
+
+// $utilities: (
+//   "translate-middle": (
+//       property: transform,
+//       class: translate-middle,
+//       values: (
+//         null: translate(-85%, -60%),
+//         x: translateX(-85%),
+//         y: translateY(-60%),
+//       )
+//     ),
+// );
+
+// .start-100.translate-middle{
+//     transform: translate(-15%, -12%) !important;
+//     overflow: hidden;
+//     img{
+//         overflow: hidden;
+//     }
+// }
+// .navbar-collapse {
+//     flex-basis: 100%;
+//     flex-grow: 0 !important;
+//     align-items: center;
+// }
+// // .translate-middle {
+// //     transform: translate(-85%, -60%) !important;
+// // }
+
+
+// //Form Autofill color
+// input:-webkit-autofill,
+// input:-webkit-autofill:focus {
+//     transition: background-color 600000s 0s, color 600000s 0s;
+// }
+// input[data-autocompleted] {
+//     background-color: lighten($dark, 10) !important;
+// }
+
+// //Image Slider
+
+
+
+// @include media-breakpoint-down(lg){
+// //     .hero .ratio-21x9{
+// //         --bs-aspect-ratio: calc(3 / 4 * 100%);
+// //     }
+// }
+
+
+// //Single Breakpoints
+// @include media-breakpoint-only(xs) {
+//    .hero .ratio-21x9{
+//         --bs-aspect-ratio: calc(3 / 4 * 100%);
+//     }
+//     .gallery .ratio-16x9{
+//         --bs-aspect-ratio: calc(3 / 4 * 100%);
+//     }
+// }
+// @include media-breakpoint-only(sm) {
+//    .hero .ratio-21x9{
+//         --bs-aspect-ratio: calc(2 / 3 * 100%);
+//     }
+//     .gallery .ratio-16x9{
+//         --bs-aspect-ratio: calc(2 / 3 * 100%);
+//     }
+// }
+// @include media-breakpoint-only(md) {
+//    .hero .ratio-21x9{
+//         --bs-aspect-ratio: calc(9 / 16 * 100%);
+//     }
+// }
+
+// // @include media-breakpoint-only(md) {
+// //     .glightbox-mobile .glightbox-container .gslide-desc{
+// //         color: red !important;
+// //     }
+// // }
+// @include media-breakpoint-between(xs, lg) {
+//     .navbar .container-fluid{
+//         justify-content: start !important;
+//         button{
+//             margin-right: 1rem;
+//         }
+//     }
+// }
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './main.css'
+import Stat from './components/stats';
+import Services from './components/services';
+import Contact from './components/contact';
+import Footer from './components/footer';
+import Hero from './components/hero';
+import Testimonials from './components/testimonials';
+import NavBar from './components/navBar';
+import Gallery from './components/gallery';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='bg-dark text-light'>
+      <NavBar />
+      <Hero />
+      <Stat />
+      <Services />
+      <Gallery />
+      <Testimonials />
+      <Contact />
+      <Footer />
+
+      <section className='position-fixed me-1 bg-white p-1 rounded text-center' style={{ bottom: 24, right: 24, height: 48, width: 48 }}>
+        <a href='#' target="_blank"><i className="fa-brands fa-square-whatsapp fs-4 text-dark" ></i></a>
+      </section>
+    </main>
   );
 }
 
