@@ -213,14 +213,29 @@ a:focus {
   transition: 0.5s;
 }
 
+.fa-square-whatsapp {
+  color: #075e54 !important;
+}
+
+.whats-icon {
+  height: 2.4375rem;
+  width: 2.4375rem;
+}
+
 @media (max-width: 767.98px) {
   .card.hero .ratio-21x9 {
-    --bs-aspect-ratio: calc(3 / 4 * 100%);
+    --bs-aspect-ratio: calc(4 / 3 * 100%);
+  }
+  .ratio-16x9 {
+    --bs-aspect-ratio: calc(4 / 3 * 100%) !important;
   }
 }
 @media (max-width: 575.98px) {
   .card.hero .ratio-21x9 {
     --bs-aspect-ratio: calc(4 / 3 * 100%);
+  }
+  .ratio-16x9 {
+    --bs-aspect-ratio: calc(3 / 4 * 100%) !important;
   }
 }
 /*!
@@ -7460,8 +7475,8 @@ textarea.form-control-lg {
   --bs-aspect-ratio: 42.8571428571%;
 }
 
-.ratio-4x1 {
-  --bs-aspect-ratio: 25%;
+.ratio-3x4 {
+  --bs-aspect-ratio: 133.3333333333%;
 }
 
 .fixed-top {

@@ -20,8 +20,8 @@ function App() {
       <Contact />
       <Footer />
 
-      <section className='position-fixed me-1 bg-white p-1 rounded text-center' style={{ bottom: 24, right: 24, height: 48, width: 48 }}>
-        <a href='#' target="_blank"><i className="fa-brands fa-square-whatsapp fs-4 text-dark" ></i></a>
+      <section className='position-fixed bg-white rounded whats-icon position-relative' style={{ bottom: 24, right: 24 }}>
+        <a href='#' target="_blank"><i className="fa-brands fa-square-whatsapp fs-1 position-absolute top-50 start-50 translate-middle"></i></a>
       </section>
     </main>
   );

@@ -18,24 +18,24 @@ function NavBar() {
                 </a>
 
                 <div className="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav  mb-2 mb-lg-0 nav-pills">
+                    <ul className="navbar-nav  mt-3 mb-lg-0 nav-pills">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <a className="nav-link active ps-1" aria-current="page" href="#">Home</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About us</a>
+                            <a className="nav-link ps-1" href="#">About us</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Services</a>
+                            <a className="nav-link ps-1" href="#">Services</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Gallery</a>
+                            <a className="nav-link ps-1" href="#">Gallery</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Testimonials</a>
+                            <a className="nav-link ps-1" href="#">Testimonials</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Contact us</a>
+                            <a className="nav-link ps-1" href="#">Contact us</a>
                         </li>
                     </ul>
 

@@ -139,7 +139,7 @@ $aspect-ratios: (
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
-  "4x1": calc(1 / 4 * 100%)
+  "3x4": calc(4 / 3 * 100%)
 );
 
 //Input form
@@ -376,22 +376,44 @@ border-radius: 50%;
     transition: .5s;
   }
 
+  .fa-square-whatsapp{
+    color: #075e54 !important;
+  }
+
+  .whats-icon {
+    height: $h3-font-size;
+    width: $h3-font-size;
+  }
+  
+
 @import '../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 
 @include media-breakpoint-down(md) { 
     .card.hero { 
       .ratio-21x9{
-        --bs-aspect-ratio: calc(3 / 4 * 100%);
+        --bs-aspect-ratio: calc(4 / 3 * 100%);
         }
     }
-  }
-  @include media-breakpoint-down(sm) { 
+
+    .ratio-16x9 {
+        --bs-aspect-ratio: calc(4 / 3 * 100%) !important;
+    }
+}
+    
+
+
+@include media-breakpoint-down(sm) { 
     .card.hero { 
       .ratio-21x9{
         --bs-aspect-ratio: calc(4 / 3 * 100%);
         }
     }
-  }
+
+    .ratio-16x9 {
+        --bs-aspect-ratio: calc(3 / 4 * 100%) !important;
+    }
+}
+
 
 
 // .slick-active.slick-center.slick-current {

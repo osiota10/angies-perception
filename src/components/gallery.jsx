@@ -20,7 +20,7 @@ function Gallery() {
                         </section>
                         <section
                             class="card-img-overlay img-dark-overlay d-flex flex-column align-items-center justify-content-center">
-                            <h1 class="mb-4">Our Collection Gallery</h1>
+                            <h3 class="mb-4">Our Collection Gallery</h3>
                             <button type="button" class="card-title btn btn-dark animate__animated animate__tada animate__infinite animate__slow" >Discover true Inspiration</button>
                         </section>
                     </div>
